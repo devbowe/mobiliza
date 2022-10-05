@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		 <!-- Google Tag Manager -->
+		 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PJPF5ST');</script>
+		<!-- End Google Tag Manager -->
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge; text/html">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+
+		<title>Comece agora a sua jornada com o Applique</title>
+		<meta name="description" content="Pronto! Agora você já pode começar a usar o Applique.">
+		<meta name="keywords" content="Mobiliza, Applique, EaD">	
+		
+		<!-- Favicon -->
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+        <!-- FONTES -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+		<!-- ESTILOS -->
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<link rel="stylesheet" href="assets/css/style.css">
+
+		<!-- OUTROS -->
+		<link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet" id="font-awesome-5-kit-css">
+		<link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet" id="font-awesome-5-kit-css">
+		<link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet" id="font-awesome-5-kit-css">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />	 
+    </head>
+    <body>	
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJPF5ST"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+
+		<section class="obrigado">
+			<div class="logo">
+				<img src="assets/img/applique-v2.webp"/>
+			</div>
+			<div class="texto">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-md-12 col-lg-12 d-flex flex-column justify-content-center">
+							<h1 data-aos="fade-in" data-aos-duration="700" class="aos-init aos-animate">
+								Seus 7 dias grátis já começaram!
+							</h1>
+							<h2 data-aos="fade-in" data-aos-duration="700" class="aos-init aos-animate">
+								Em caso de dúvidas, entre em contato <br/>
+								com nosso suporte ;)
+							</h2>
+						</div>
+					</div>
+				</div> <!-- container -->
+			</div>
+		</section>
+
+		<!-- Javascript -->
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+		<script src="assets/js/sweetalert2.js"></script>
+		<script src="assets/js/mask.js"></script>
+		<script src="assets/js/scripts.js"></script>
+		
+		<!-- Javascript -->
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+		<script src="assets/js/sweetalert2.js"></script>
+		<script src="assets/js/mask.js"></script>
+		<script src="assets/js/scripts.js"></script>
+		
+		<script>
+			AOS.init({
+				disable: function() {
+					var maxWidth = 800;
+					return window.innerWidth < maxWidth;
+				}
+			});   
+			
+			$(document).ready(function() {
+                function getUrlParamByName(name, url) {
+                    if (!url) url = window.location.href;
+                
+                    name = name.replace(/[\[\]]/g, '\\$&');
+                    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
+                    var results = regex.exec(url);
+                
+                    if (!results) return null;
+                    if (!results[2]) return '';
+                
+                    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+                }
+
+                $('#utm_source').val(getUrlParamByName('utm_source'));
+                $('#utm_medium').val(getUrlParamByName('utm_medium'));
+                $('#utm_campaign').val(getUrlParamByName('utm_campaign'));
+				$('#utm_content').val(getUrlParamByName('utm_content'));
+				$('#utm_term').val(getUrlParamByName('utm_term'));
+				$('#url_pagina').val(location.protocol + '//' + location.host + location.pathname);
+            });
+		</script>
+    </body>
+
+</html>

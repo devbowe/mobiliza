@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background: var(--purple-text);
+}
+
+body,
+input,
+textarea,
+button {
+  font: 300 1rem "Lato", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --white: #fff;
+  --orange-text: rgb(252, 72, 21);
+  --purple-text: rgb(49, 19, 89);
+}
+
+.btn-primary {
+  display: flex;
+  width: fit-content;
+
+  cursor: pointer;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+
+  background: var(--orange-text);
+  color: var(--white);
+  border-radius: 15px;
+  border: 0;
+  box-shadow: 4px 4px 0px rgb(169, 0, 72);
+
+  padding: 0.7rem 3rem;
+
+  transition: all ease-in-out 0.4s;
+}
+
+.btn-primary:hover {
+  box-shadow: 8px 8px 0px rgb(169, 0, 72);
+}
+
+section#first {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--purple-text) url("../img/") top center/cover no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+
+section#first .container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 3rem;
+
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+section#first .container .box:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+section#first .logo {
+  margin-bottom: 2rem;
+}
+
+section#first .text h1 {
+  font-size: 1.4rem;
+  color: var(--orange-text);
+
+  font-weight: 700;
+
+  margin-bottom: 2rem;
+}
+
+section#first .text p {
+  font-size: 1.4rem;
+  color: var(--white);
+
+  margin-bottom: 2rem;
+}
+
+section#first .container .box:nth-child(2) img {
+  height: 100vh;
+}
+
+@media (max-width: 1024px) {
+  section#first {
+    overflow: auto;
+    margin: 3rem 0;
+  }
+
+  section#first .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  section#first .container .box:nth-child(2) img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  section#first .container .btn-primary {
+    padding: 1rem 1rem;
+    font-size: 1rem;
+  }
+}
